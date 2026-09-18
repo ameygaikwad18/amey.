@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -759,7 +760,7 @@
 
             <div class="info-item">
               <span>Field</span>
-              <span>Computer Science and Engineering</span>
+              <span>Computer Engineering</span>
             </div>
 
             <div class="info-item">
@@ -1087,3 +1088,166 @@
 
             <p>
               Stay curious, explore new skills,
+              and learn from experience.
+            </p>
+
+          </div>
+
+
+          <div class="value reveal">
+
+            <h3>
+              02. Collaborate
+            </h3>
+
+            <p>
+              Work with others, share ideas,
+              and contribute to team goals.
+            </p>
+
+          </div>
+
+
+          <div class="value reveal">
+
+            <h3>
+              03. Improve
+            </h3>
+
+            <p>
+              Take responsibility, accept feedback,
+              and keep developing.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+
+      <div class="container reveal">
+
+        <div class="section-number">
+          05 / CONNECT
+        </div>
+
+        <h2>
+          Let's learn,<br>
+          build & grow together.
+        </h2>
+
+        <p>
+          Interested in collaboration, learning new
+          skills, and contributing to meaningful
+          college projects and activities.
+        </p>
+
+
+        <div class="buttons">
+
+
+          <!-- REPLACE WITH YOUR EMAIL -->
+
+          <a
+            href="mailto:yourmail@example.com"
+            class="btn btn-dark"
+          >
+            Get in Touch ↗
+          </a>
+
+
+          <!-- REPLACE WITH YOUR GITHUB URL -->
+
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-light"
+          >
+            GitHub ↗
+          </a>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-inner">
+
+        <p>
+          © 2026 Amey Gaikwad
+        </p>
+
+        <div class="footer-links">
+
+          <a href="#home">
+            Back to top ↑
+          </a>
+
+          <a href="#projects">
+            Project
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- SCROLL ANIMATION -->
+
+  <script>
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach((entry) => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+            observer.unobserve(entry.target);
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.1
+      }
+    );
+
+    document.querySelectorAll(".reveal").forEach((element) => {
+
+      observer.observe(element);
+
+    });
+
+  </script>
+
+</body>
+</html>
